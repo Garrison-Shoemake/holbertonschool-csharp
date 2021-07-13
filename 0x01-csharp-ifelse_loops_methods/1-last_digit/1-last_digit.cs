@@ -20,7 +20,7 @@ class Program
         }
         else 
         {
-            Console.WriteLine("The last digit of {0} is {1} and is zero.", number, last);
+            Console.WriteLine("The last digit of {0} is {1} and is 0", number, last);
         }
     }
 }
