@@ -17,6 +17,7 @@ class Array
                 System.Console.Write("{0} ", array[index]);
             }
         }
+        System.Console.WriteLine();
     }
 }
 
