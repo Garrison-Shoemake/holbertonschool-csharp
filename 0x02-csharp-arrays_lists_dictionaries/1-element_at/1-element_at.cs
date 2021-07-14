@@ -10,7 +10,15 @@ class Array
             System.Console.WriteLine("Index out of range");
             return -1;
         }
-        return array[index];
+        else if (index > array.Length)
+        {
+            System.Console.WriteLine("Index out of range");
+            return -1;
+        }
+        else
+        {
+            return array[index];
+        }        
     }
 }
 
