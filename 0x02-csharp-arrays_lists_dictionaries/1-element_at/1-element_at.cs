@@ -5,11 +5,6 @@ class Array
 {
     public static int elementAt(int[] array, int index)
     {
-        if (index > array.Length)
-        {
-            System.Console.WriteLine("Index out of range");
-            return -1;
-        }
         if (index < 0)
         {
             System.Console.WriteLine("Index out of range");
