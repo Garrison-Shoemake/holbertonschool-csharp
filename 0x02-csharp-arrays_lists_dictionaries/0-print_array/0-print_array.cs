@@ -11,7 +11,8 @@ class Array
 //        }
         if (size < 0)
         {
-            System.Console.Write("Size cannot be negative");
+            System.Console.WriteLine("Size cannot be negative");
+            return null;
         }
         int[] array = new int[size];
         for (int pos = 0; pos < size; pos++)
