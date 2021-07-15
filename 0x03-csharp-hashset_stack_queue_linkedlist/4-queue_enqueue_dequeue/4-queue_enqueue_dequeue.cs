@@ -13,7 +13,7 @@ class MyQueue
         System.Console.WriteLine("Number of items: {0}", count);
         if (aQueue.Count == 0)
         {
-            System.Console.WriteLine("Stack is empty");
+            System.Console.WriteLine("Queue is empty");
         }
         else
         {
