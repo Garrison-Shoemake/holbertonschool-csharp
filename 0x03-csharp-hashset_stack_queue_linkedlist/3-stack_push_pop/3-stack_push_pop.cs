@@ -10,7 +10,7 @@ class MyStack
             count++;
         }
         System.Console.WriteLine("Number of items: {0}", count);
-        if (aStack.Peek() == null)
+        if (aStack.Count == 0)
         {
             System.Console.WriteLine("Stack is empty");
         }
