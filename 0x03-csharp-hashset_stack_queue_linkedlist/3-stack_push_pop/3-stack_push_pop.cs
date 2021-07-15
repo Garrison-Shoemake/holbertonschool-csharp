@@ -18,14 +18,10 @@ class MyStack
         {
             System.Console.WriteLine("Top item: {0}", aStack.Peek());
         }
-        System.Console.WriteLine("Stack contains \"{0}\": {1}", search, aStack.Contains(search));  
-        foreach (string thing in aStack)
+        System.Console.WriteLine("Stack contains \"{0}\": {1}", search, aStack.Contains(search));
+        while (aStack.Contains(search) == true)
         {
-            string popped = aStack.Pop();
-            if (popped == search)
-            {
-                break;
-            }
+            aStack.Pop();
         }
         aStack.Push(newItem);
         return aStack;
