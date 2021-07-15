@@ -12,8 +12,15 @@
             {
                 for (int j = 0; j < height; j++)
                 {
-                    System.Console.Write(matrix[i,j]);
-                    System.Console.Write(" ");
+                    
+                    if (j == height - 1)
+                    {
+                        System.Console.Write("{0}",matrix[i,j]);
+                    }
+                    else
+                    {
+                        System.Console.Write("{0} ",matrix[i,j]);
+                    }
                 }
                 System.Console.WriteLine();
             }        
