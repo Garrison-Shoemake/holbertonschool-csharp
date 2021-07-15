@@ -9,6 +9,7 @@ class List
         HashSet<int> second = new HashSet<int>(list2);
         first.SymmetricExceptWith(second);
         List<int> retList = new List<int>(first);
+        retList.Sort();
         return retList;
 
     }
