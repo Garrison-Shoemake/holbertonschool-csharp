@@ -12,6 +12,7 @@ class LList
         int ret = 0;
         LinkedListNode<int> head = myLList.First;
         ret = head.Value;
+        myLList.Remove(head);
         return ret;
     }
 }
