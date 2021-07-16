@@ -6,7 +6,13 @@ class LList
 {
     public static void Delete(LinkedList<int> myLList, int index)
     {
-        myLList.Remove(myLList.ElementAt(index));
+        try
+        {
+            myLList.Remove(myLList.ElementAt(index));
+        }
+        catch{
+            return;
+        }
     }
 }
 
