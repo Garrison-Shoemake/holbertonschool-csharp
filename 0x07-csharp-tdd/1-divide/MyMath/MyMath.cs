@@ -9,8 +9,7 @@ namespace MyMath
         ///<summary>Method using a matrix and a number to divide by</summary>
         public static int[,] Divide(int[,] matrix, int num)
         {
-            int i = 0;
-            int j = 0;
+
             try
             {
                 if (num == 0)
@@ -18,14 +17,12 @@ namespace MyMath
                     System.Console.WriteLine("Num cannot be 0");
                     return null;
                 }
-                while (i < matrix.GetLength(0))
+                for (int i = 0; i < matrix.GetLength(0); i++)
                 {
-                    while (j < matrix.GetLength(1))
+                    for (int j = 0; j < matrix.GetLength(1); j++)
                     {
                         matrix[i,j] /= num;
-                        j++;
                     }
-                    i++;
                 }
                 return matrix;
             }
