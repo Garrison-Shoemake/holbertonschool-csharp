@@ -3,8 +3,10 @@ using System.Collections.Generic;
 
 namespace MyMath
 {
+    ///<summary>Divides a matrix element by a number</summary>
     public class Matrix
     {
+        ///<summary>Method using a matrix and a number to divide by</summary>
         public static int[,] Divide(int[,] matrix, int num)
         {
             int i = 0;
