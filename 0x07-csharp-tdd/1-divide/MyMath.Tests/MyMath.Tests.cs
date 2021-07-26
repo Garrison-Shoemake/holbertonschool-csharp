@@ -9,7 +9,7 @@ namespace Tests
 
         public void TestNullCheck()
         {
-            result = Matrix.Divide(null, 5)
+            result = Matrix.Divide(null, 5);
             Assert.IsNull(result);
         }
         public void TestRegularDivision()
