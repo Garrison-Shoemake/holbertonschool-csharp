@@ -2,7 +2,7 @@
 
 namespace MyMath
 {
-    class Operations
+    public class Operations
     {
         public static int Add(int a, int b)
         {
