@@ -11,7 +11,7 @@ namespace Text
             for (int i = 0; i < s.Length; i++)
             {
                 char j = s[i];
-                if (s.IndexOf(unique) == i && s.IndexOf(j, i + 1) == -1)
+                if (s.IndexOf(j) == i && s.IndexOf(j, i + 1) == -1)
                 {
                     return i;
                 }
