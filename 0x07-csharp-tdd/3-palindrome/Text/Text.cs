@@ -10,7 +10,7 @@ namespace Text
         public static bool IsPalindrome(string s)
         {
             string test = s.ToLower();
-            string nopunct = Regex.replace(test, @"[,.:; ]", "");
+            string nopunct = Regex.Replace(test, @"[,.:; ]", "");
             int i = 0;
             int j = nopunct.Length - 1;
 
