@@ -10,7 +10,8 @@ namespace Text
         {
             for (int i = 0; i < s.Length; i++)
             {
-                if (s.IndexOf(s[i], i + 1) == -1)
+                char j = s[i];
+                if (s.IndexOf(unique, i + 1) == -1)
                 {
                     return i;
                 }
