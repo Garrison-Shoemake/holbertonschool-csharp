@@ -29,7 +29,7 @@ namespace MyMath.Tests
         [Test]
         public void MaxWithNegative()
         {
-            List<int> test = new List<int>() {0, 100, -1, -2};
+            List<int> test = new List<int>() {-50, -100, -1, -2};
             int result = Operations.Max(test);
             Assert.AreEqual(result, 100);
         }
