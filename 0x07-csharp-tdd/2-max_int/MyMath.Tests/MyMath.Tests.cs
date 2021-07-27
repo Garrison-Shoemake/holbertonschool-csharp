@@ -31,7 +31,7 @@ namespace MyMath.Tests
         {
             List<int> test = new List<int>() {-50, -100, -1, -2};
             int result = Operations.Max(test);
-            Assert.AreEqual(result, 100);
+            Assert.AreEqual(result, -1);
         }
         [Test]
         public void EmptyList()
