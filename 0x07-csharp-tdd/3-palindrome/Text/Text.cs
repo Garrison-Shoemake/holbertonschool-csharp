@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 
 namespace Text
 {
@@ -8,19 +9,21 @@ namespace Text
         ///<summary>Checks a string if it is a palindrome</summary>
         public static bool IsPalindrome(string s)
         {
-            string rev;
-            char[] ch = s.ToCharArray();
-            Array.Reverse(ch);
-            rev = new string(ch);
-            bool b = s.Equals(rev, StringComparison.InvariantCultureIgnoreCase);
-         if (b == true) 
-         {
+            string test = s.ToLower();
+            string nopunct = Regex.replace(test, @"[,.:; ]", "");
+            int i = 0;
+            int j = nopunct.Length - 1;
+
+            while (i <j)
+            {
+                if (nopunct[i] != nopunct[j])
+                {
+                    return false;
+                }
+                i++;
+                j--;
+            }
             return true;
-         } 
-         else 
-         {
-            return false;
-         }
         }
     }
 }
