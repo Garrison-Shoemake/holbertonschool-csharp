@@ -9,8 +9,8 @@ namespace Tests
 
         public void TestNullCheck()
         {
-            result = Matrix.Divide(new int[,] = null, 5);
-            Assert.IsNull(result);
+            result = Matrix.Divide(null, 5);
+            Assert.AreEqual(result, null);
         }
         public void TestRegularDivision()
         {
