@@ -5,7 +5,7 @@ namespace Text
     ///<summary>String class has standard string functions</summary>
     public class Str
     {
-        ///<summary>checks for the first non-repeating character in a string</summary>
+        ///<summary>Checks for the first non-repeating character in a string</summary>
         public static int UniqueChar(string s)
         {
             char unique = "";
