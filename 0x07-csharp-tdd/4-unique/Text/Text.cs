@@ -2,7 +2,7 @@
 
 namespace Text
 {
-    ///<summary>String class has standard string functions</summary>
+    ///<summary>Class for string methods</summary>
     public class Str
     {
         ///<summary>Checks for the first non-repeating character in a string</summary>
