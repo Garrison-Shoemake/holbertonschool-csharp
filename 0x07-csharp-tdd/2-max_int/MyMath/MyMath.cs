@@ -3,17 +3,18 @@ using System.Collections.Generic;
 
 namespace MyMath
 {
+    ///<summary>Operations class with standard arithmetic</summary>
     public class Operations
     {
-
+        ///<summary>Finds the highest integet in a list</summary>
         public static int Max(List<int> nums)
         {
-            if (myList == null || myList.Count == 0)
+            if (nums == null || nums.Count == 0)
             {
                 return 0;
             }
-            myList.Sort();
-            return myList[myList.Count - 1];
+            nums.Sort();
+            return nums[nums.Count - 1];
         }
     }
 }
