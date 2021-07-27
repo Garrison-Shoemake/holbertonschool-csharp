@@ -2,7 +2,7 @@ using NUnit.Framework;
 
 namespace Text.Tests
 {
-    ///<summary>Class for testing in task 4</summary>
+    ///<summary>Class for testing</summary>
     public class Tests
     {
 
