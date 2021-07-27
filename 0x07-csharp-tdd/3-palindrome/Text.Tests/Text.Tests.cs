@@ -19,7 +19,7 @@ namespace Text.Tests
         [Test]
         public void PunctSpaceTest()
         {
-            string test = "a, b, c, d, e, d, c, b, a";
+            string test = "abcd, e dcba";
             Assert.IsTrue(Str.IsPalindrome(test));
         }
         [Test]
