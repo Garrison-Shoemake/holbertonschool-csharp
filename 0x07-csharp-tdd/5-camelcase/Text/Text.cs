@@ -21,7 +21,7 @@ namespace Text
                     }
                     index++;
                 }
-                return count;
+                return count + 1;
             }
             catch
             {
