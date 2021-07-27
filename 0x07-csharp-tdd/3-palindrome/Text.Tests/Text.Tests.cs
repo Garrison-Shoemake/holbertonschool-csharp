@@ -31,7 +31,7 @@ namespace Text.Tests
         [Test]
         public void SpaceTest()
         {
-            string test = "abcd e dcba";
+            string test = "abcd edcba";
             Assert.IsTrue(Str.IsPalindrome(test));
         }
     }
