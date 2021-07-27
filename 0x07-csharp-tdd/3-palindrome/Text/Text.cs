@@ -12,7 +12,7 @@ namespace Text
             char[] ch = s.ToCharArray();
             Array.Reverse(ch);
             rev = new string(ch);
-            bool b = s.Equals(rev, StringComparison.OrdinalIgnoreCase);
+            bool b = s.Equals(rev, StringComparison.InvariantCultureIgnoreCase);
          if (b == true) 
          {
             return true;
