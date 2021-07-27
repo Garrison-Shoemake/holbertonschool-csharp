@@ -17,7 +17,7 @@ namespace Text.Tests
             Assert.IsTrue(Str.IsPalindrome(test));
         }
         [Test]
-        public void PunctSpaceTest()
+        public void PunctTest()
         {
             string test = "abcd, e dcba";
             Assert.IsTrue(Str.IsPalindrome(test));
@@ -26,6 +26,12 @@ namespace Text.Tests
         public void EmptyString()
         {
             string test = "";
+            Assert.IsTrue(Str.IsPalindrome(test));
+        }
+        [Test]
+        public void SpaceTest()
+        {
+            string test = "abcd e dcba";
             Assert.IsTrue(Str.IsPalindrome(test));
         }
     }
