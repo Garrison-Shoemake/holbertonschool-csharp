@@ -13,11 +13,10 @@ namespace Text
             {
                 if (s.IndexOf(s[i], i + 1) == -1)
                 {
-                    index = i;
-                    break;
+                    return i;
                 }
             }
-            return index;
+            return -1;
         }
     }
 }
