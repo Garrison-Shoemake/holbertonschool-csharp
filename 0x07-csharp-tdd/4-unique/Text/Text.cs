@@ -5,7 +5,7 @@ namespace Text
     ///<summary>Class for string methods</summary>
     public class Str
     {
-        ///<summary>Checks for the first non-repeating character in a string</summary>
+        ///<summary>Checks for first unique character</summary>
         public static int UniqueChar(string s)
         {
             char unique = "";
