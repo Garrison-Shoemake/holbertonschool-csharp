@@ -6,12 +6,6 @@ namespace Tests
     public class Tests
     {
         [Test]
-
-        public void TestNullCheck()
-        {
-            result = Matrix.Divide(null, 5);
-            Assert.AreEqual(result, null);
-        }
         public void TestRegularDivision()
         {
             int[,] matrix = {{2, 4}, {6,8}, {10,12}};
