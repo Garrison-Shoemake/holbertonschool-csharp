@@ -10,6 +10,10 @@ namespace Text
         {
             int count = 0;
             int index = 0;
+            if (s == "")
+            {
+                return 0;
+            }
 
             try
             {
