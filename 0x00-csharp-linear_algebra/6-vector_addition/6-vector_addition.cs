@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 class VectorMath
 {
+    ///<summary>Adds two vectors and returns resulting vector</summary>
     public static double[] Add(double[] vector1, double[] vector2)
     {
 
