@@ -8,7 +8,7 @@ class VectorMath
         int i = 0;
         double sum = 0;
 
-        if (vector.Length < 2 && vector.Length > 3)
+        if (vector.Length < 2 || vector.Length > 3)
         {
             return -1;
         }
