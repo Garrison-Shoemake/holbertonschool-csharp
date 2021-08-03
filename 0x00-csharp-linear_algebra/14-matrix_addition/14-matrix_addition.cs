@@ -19,6 +19,10 @@
             {
                 return wrong;
             }
+            if (matrix1.GetLength(1) != matrix2.GetLength(1))
+            {
+                return wrong;
+            }
             for (int i = 0; i < matrix1.GetLength(0); i++)
             {
                 for (int j = 0; j < matrix1.GetLength(1); j++)
