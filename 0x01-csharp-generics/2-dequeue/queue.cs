@@ -25,6 +25,7 @@ public class Queue<T>
         if (head == null)
         {
             head = new Node(value);
+            head.next = tail;
         }
         else
         {
@@ -36,7 +37,6 @@ public class Queue<T>
             }
             else
             {
-
                 tail.next = new Node(value);
             }
         }
