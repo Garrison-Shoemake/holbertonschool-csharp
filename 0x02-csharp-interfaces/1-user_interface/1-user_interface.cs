@@ -24,6 +24,7 @@ interface ICollectable
 }
 class TestObject: Base, IInteractive, IBreakable, ICollectable
 {
+    public string name {get; set;}
     public bool isCollected {get; set;}
     public int durability {get; set;}
     public void Interact()
@@ -36,7 +37,7 @@ class TestObject: Base, IInteractive, IBreakable, ICollectable
     }
     public void Collect()
     {
-        
+
     }
 
 }
