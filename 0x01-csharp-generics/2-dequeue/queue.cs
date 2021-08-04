@@ -28,8 +28,17 @@ public class Queue<T>
         }
         else
         {
-            tail = new Node(value);
-            head.next = tail;
+            
+            if (head.next == null)
+            {
+                
+                head.next = new Node(value);
+            }
+            else
+            {
+
+                tail.next = new Node(value);
+            }
         }
         count++;
     }
