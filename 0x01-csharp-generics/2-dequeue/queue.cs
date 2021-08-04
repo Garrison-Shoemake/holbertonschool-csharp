@@ -22,17 +22,16 @@ public class Queue<T>
     ///<summary>Adds a new node to the end of the queue</summary>
     public void Enqueue(T value)
     {
+        Node insert = new Node(value);
         if (head == null)
         {
-            head = new Node(value);
-            head.next = tail;
+            head = insert;
+            tail = insert;
         }
         else
         {
-            if (head.next == null)
-                head.next = new Node(value);
-            else        
-                tail = new Node(value);
+            tail.next = insert;
+            tail = insert;
         }
         count++;
     }
