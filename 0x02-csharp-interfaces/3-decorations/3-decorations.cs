@@ -52,7 +52,7 @@ class Decoration : Base, IInteractive, IBreakable
     }
     public void Interact()
     {
-        if (this.durability <= 0)
+        if (this.durability < 0)
         {
             System.Console.WriteLine($"The {this.name} has been broken.");
             return;
@@ -69,16 +69,15 @@ class Decoration : Base, IInteractive, IBreakable
     }
     public void Break()
     {
+        this.durability--;
         if (this.durability > 0)
         {
             System.Console.WriteLine($"You hit the {this.name}. It cracks.");
-            this.durability--;
             return;
         }
         if (this.durability == 0)
         {
             System.Console.WriteLine($"You smash the {this.name}. What a mess.");
-            this.durability--;
             return;
         }
         if (this.durability < 0)
