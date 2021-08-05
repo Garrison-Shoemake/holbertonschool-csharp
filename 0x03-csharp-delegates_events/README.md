@@ -1,0 +1,1 @@
+This is the readme for the 0x03-csharp-delegates_events project
