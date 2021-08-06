@@ -54,6 +54,7 @@ public class Player
         else if (newHp > this.maxHp) this.hp = this.maxHp;
         else this.hp = newHp;
     }
+    ///<summary>Applies the enum modfier to health</summary>
     public float ApplyModifier(float baseValue, Modifier modifier)
     {
         if (modifier == Modifier.Weak) return baseValue * 0.5f;
@@ -61,11 +62,16 @@ public class Player
         else return baseValue;
     }
 }
+///<summary>Delegate for modificer calculation</summary>
 public delegate float CalculateModifier(float baseValue, Modifier modifier);
 
+///<summary>Enum list for modifier</summary>
 public enum Modifier
 {
+    ///<summary>WEAKLING</summary>
     Weak,
+    ///<summary>BASELING</summary>
     Base,
+    ///<summary>STRONGLING</summary>
     Strong
 }
