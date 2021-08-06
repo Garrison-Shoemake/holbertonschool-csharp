@@ -33,6 +33,7 @@ public class Player
         if (damage < 0) System.Console.WriteLine($"{this.name} takes 0 damage!");   
         else System.Console.WriteLine($"{this.name} takes {damage} damage!");  
         this.hp -= damage;
+        ValidateHP(this.hp);
     }
     ///<summary>Method for healing damage</summary>
     public void HealDamage(float heal)
@@ -48,7 +49,6 @@ public class Player
         if (newHp < 0) this.hp = 0;
         else if (newHp > this.maxHp) this.hp = this.maxHp;
         else this.hp = newHp;
-        ValidateHP(this.hp);
     }
 }
 
