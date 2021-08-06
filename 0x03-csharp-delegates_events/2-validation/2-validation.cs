@@ -39,8 +39,12 @@ public class Player
     public void HealDamage(float heal)
     {
         if (heal < 0) System.Console.WriteLine($"{this.name} heals 0 HP!");
-        else System.Console.WriteLine($"{this.name} heals {heal} HP!");
-        this.hp += heal;
+        else 
+        {
+            System.Console.WriteLine($"{this.name} heals {heal} HP!");
+            this.hp += heal;
+        }
+         
         ValidateHP(this.hp);
     }
     ///<summary>Validates the total health of the player</summary>
